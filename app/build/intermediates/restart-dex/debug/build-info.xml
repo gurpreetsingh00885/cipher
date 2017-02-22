@@ -5,47 +5,33 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="23178253034676"
+    timestamp="28234135338983"
     token="-8199184105945987939"
-    verifier="COMPATIBLE" >
+    verifier="MANIFEST_FILE_CHANGE" >
 
     <task
         name="javac"
-        duration="343" />
+        duration="468" />
     <task
         name="instant-run-dex"
-        duration="1411" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="167" />
+        duration="13" />
     <task
         name="verifier"
-        duration="5" />
+        duration="0" />
 
     <artifact
-        location="/home/gurpreet/Desktop/Cipher/app/build/intermediates/reload-dex/debug/classes.dex"
-        type="RELOAD_DEX" />
+        location="/home/gurpreet/Desktop/Cipher/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
 
     <build
-        timestamp="23027692928629"
-        verifier="FULL_BUILD_REQUESTED" >
+        timestamp="28234135338983"
+        verifier="MANIFEST_FILE_CHANGE" >
         <artifact
             location="/home/gurpreet/Desktop/Cipher/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="23060752275586"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/gurpreet/Desktop/Cipher/app/build/intermediates/builds/debug/23060752275586/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="23178253034676"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/gurpreet/Desktop/Cipher/app/build/intermediates/reload-dex/debug/classes.dex"
-            type="RELOAD_DEX" />
     </build>
 
 </instant-run>
