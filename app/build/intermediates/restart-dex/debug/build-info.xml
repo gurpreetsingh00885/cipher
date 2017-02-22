@@ -5,30 +5,30 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="2300720380023"
+    timestamp="6445843237659"
     token="-8199184105945987939"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="METHOD_DELETED" >
 
     <task
         name="javac"
-        duration="2736" />
+        duration="199" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="941" />
+        duration="70" />
     <task
         name="verifier"
-        duration="20" />
+        duration="4" />
 
     <artifact
         location="/home/gurpreet/Desktop/Cipher/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="2300720380023"
-        verifier="FULL_BUILD_REQUESTED" >
+        timestamp="6445843237659"
+        verifier="METHOD_DELETED" >
         <artifact
             location="/home/gurpreet/Desktop/Cipher/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />

@@ -15,7 +15,7 @@
         android:allowBackup="true"
         android:icon="@drawable/app_icon"
         android:label="Cipher"
-        android:theme="@style/AppTheme2" >
+        android:theme="@android:style/Theme.Holo.Light.Dialog" >
         <activity
             android:name="com.gs.cipher.MainActivity"
             android:screenOrientation="portrait"

@@ -10,5 +10,9 @@
     {
         "merged": "/home/gurpreet/Desktop/Cipher/app/build/intermediates/res/merged/debug/layout/overlay.xml",
         "source": "/home/gurpreet/Desktop/Cipher/app/src/main/res/layout/overlay.xml"
+    },
+    {
+        "merged": "/home/gurpreet/Desktop/Cipher/app/build/intermediates/res/merged/debug/layout/title.xml",
+        "source": "/home/gurpreet/Desktop/Cipher/app/src/main/res/layout/title.xml"
     }
 ]

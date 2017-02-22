@@ -13,6 +13,8 @@ import java.util.*;
 import java.text.*;
 
 
+
+
 public class MainActivity extends Activity
 {
 
@@ -22,19 +24,24 @@ public class MainActivity extends Activity
 	private Button button2;
 	private Button button3;
 	private String text = "";
-	private Button button4;
 	private Button button5;
 	private Button button6;
 	private Button button7;
+	private ImageView info;
+	private ImageView close;
     private android.content.ClipboardManager clipboard;
 	private Intent svc;
 	private ScrollView scroll1;
 	private Dialog dialog;
+	private LayoutInflater factory;
+	private View titleView;
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
 		setContentView(R.layout.main);
+		getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.title);
 		initialize();
 		initializeLogic();
         clipboard = (android.content.ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
@@ -67,13 +74,16 @@ public class MainActivity extends Activity
 	 }*/
 	private void  initialize()
 	{
+		factory =  getLayoutInflater();
+		titleView =  factory.inflate(R.layout.title, null);
 		edittext1 = (EditText) findViewById(R.id.edittext1);
 		linear1 = (LinearLayout) findViewById(R.id.linear1);
 		edittext2 = (EditText) findViewById(R.id.edittext2);
 		button2 = (Button) findViewById(R.id.button2);
 		button3 = (Button) findViewById(R.id.button3);
-		button4 = (Button) findViewById(R.id.button4);
         button5 = (Button) findViewById(R.id.button5);
+		info = (ImageView) titleView.findViewById(R.id.imageView_info);
+		close = (ImageView) titleView.findViewById(R.id.imageView_close);
 		button6 = (Button) findViewById(R.id.button6);
 		button7 = (Button) findViewById(R.id.button7);
         svc = new Intent(this, OverlayShowingService.class);
@@ -94,7 +104,7 @@ public class MainActivity extends Activity
 			});
 
 
-		button7.setOnClickListener(new View.OnClickListener() {
+		/*close.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View _v)
 				{
@@ -102,16 +112,16 @@ public class MainActivity extends Activity
 					stopService(svc);
 				    finish();
 				}
-			});
+			});*/
 
-		button4.setOnClickListener(new View.OnClickListener() {
+		/*button4.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View _v)
 				{
 					edittext1.setText("");
 					edittext2.setText("");
 				}
-			});
+			});*/
 
 
 		button3.setOnClickListener(new View.OnClickListener() {
@@ -136,8 +146,8 @@ public class MainActivity extends Activity
 			});
 
 
-
-		button5.setOnClickListener(new View.OnClickListener() {
+		info.bringToFront();
+		/*info.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View _v)
 				{
@@ -159,7 +169,7 @@ public class MainActivity extends Activity
 						});
 				}
 			});
-
+		*/
 		button6.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View _v)
@@ -182,7 +192,31 @@ public class MainActivity extends Activity
 	}
 
 
+	public void close(View v)
+	{
+		showMessage("Thanks for using Cipher.");
+		stopService(svc);
+		finish();
+	}
 
+	public void info(View v)
+	{
+		dialog.setContentView(R.layout.custom);
+		dialog.setTitle("Help");
+		dialog.show();
+
+
+
+		Button dialogButton = (Button) dialog.findViewById(R.id.dialogButton);
+		// if button is clicked, close the custom dialog
+		dialogButton.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v)
+			{
+				dialog.dismiss();
+			}
+		});
+	}
 
 	private void showMessage(String _s)
 	{
