@@ -1,17 +1,11 @@
 package com.gs.cipher;
 
 import android.app.*;
-import android.media.Image;
 import android.os.*;
 import android.view.*;
 import android.view.View.*;
 import android.widget.*;
 import android.content.*;
-import android.graphics.*;
-import android.net.*;
-import android.text.*;
-import java.util.*;
-import java.text.*;
 
 
 
@@ -24,7 +18,6 @@ public class MainActivity extends Activity
 	private Button button2;
 	private Button button3;
 	private String text = "";
-	private ImageView info;
     private android.content.ClipboardManager clipboard;
 	private Intent svc;
 	private ScrollView scroll1;
@@ -40,6 +33,7 @@ public class MainActivity extends Activity
 		getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.title);
 		initialize();
 		initializeLogic();
+		getWindow().setBackgroundDrawableResource(android.R.color.transparent);
         clipboard = (android.content.ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
 	    stopService(svc);
 	}
@@ -77,7 +71,6 @@ public class MainActivity extends Activity
 		edittext2 = (EditText) findViewById(R.id.edittext2);
 		button2 = (Button) findViewById(R.id.button2);
 		button3 = (Button) findViewById(R.id.button3);
-		info = (ImageView) titleView.findViewById(R.id.imageView_info);
         svc = new Intent(this, OverlayShowingService.class);
         dialog = new Dialog(this);
 		scroll1 = (ScrollView) dialog.findViewById(R.id.scroll1);
@@ -129,7 +122,7 @@ public class MainActivity extends Activity
 			});
 
 
-		info.bringToFront();
+
 		/*info.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View _v)
@@ -160,7 +153,7 @@ public class MainActivity extends Activity
 	{
 	}
 
-	public void pasteImput(View v){
+	public void pasteInput(View v){
 		ClipData.Item item = clipboard.getPrimaryClip().getItemAt(0);
 		if (item.getText() != null)
 		{

@@ -44,7 +44,7 @@ ADDED from /home/gurpreet/Desktop/Cipher/app/src/main/AndroidManifest.xml:17:17-
 	android:name
 		ADDED from /home/gurpreet/Desktop/Cipher/app/src/main/AndroidManifest.xml:17:27-74
 activity#com.gs.cipher.DebugActivity
-ADDED from /home/gurpreet/Desktop/Cipher/app/src/main/AndroidManifest.xml:20:4-83
+ADDED from /home/gurpreet/Desktop/Cipher/app/src/main/AndroidManifest.xml:20:4-82
 	android:screenOrientation
 		ADDED from /home/gurpreet/Desktop/Cipher/app/src/main/AndroidManifest.xml:20:44-80
 	android:name

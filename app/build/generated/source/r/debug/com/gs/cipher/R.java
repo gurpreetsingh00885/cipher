@@ -11,45 +11,51 @@ public final class R {
     public static final class attr {
     }
     public static final class drawable {
-        public static final int app_icon=0x7f020000;
-        public static final int app_icon2=0x7f020001;
-        public static final int buttonshape=0x7f020002;
-        public static final int clear=0x7f020003;
-        public static final int close=0x7f020004;
-        public static final int copy=0x7f020005;
-        public static final int customborder=0x7f020006;
-        public static final int default_image=0x7f020007;
-        public static final int help=0x7f020008;
-        public static final int info=0x7f020009;
-        public static final int overlay=0x7f02000a;
-        public static final int paste=0x7f02000b;
-        public static final int titleborder=0x7f02000c;
+        public static final int activity_resource=0x7f020000;
+        public static final int app_icon=0x7f020001;
+        public static final int app_icon2=0x7f020002;
+        public static final int button_clear=0x7f020003;
+        public static final int button_close=0x7f020004;
+        public static final int button_copy=0x7f020005;
+        public static final int button_default=0x7f020006;
+        public static final int button_info=0x7f020007;
+        public static final int button_paste=0x7f020008;
+        public static final int button_pressed=0x7f020009;
+        public static final int buttonshape=0x7f02000a;
+        public static final int clear=0x7f02000b;
+        public static final int clear_pressed=0x7f02000c;
+        public static final int close=0x7f02000d;
+        public static final int copy=0x7f02000e;
+        public static final int copy_pressed=0x7f02000f;
+        public static final int customborder=0x7f020010;
+        public static final int default_image=0x7f020011;
+        public static final int help=0x7f020012;
+        public static final int info=0x7f020013;
+        public static final int overlay=0x7f020014;
+        public static final int paste=0x7f020015;
+        public static final int paste_pressed=0x7f020016;
+        public static final int text=0x7f020017;
+        public static final int titleborder=0x7f020018;
     }
     public static final class id {
         public static final int button2=0x7f050008;
         public static final int button3=0x7f050009;
-        public static final int cipherO=0x7f05000c;
-        public static final int closeO=0x7f05000f;
-        public static final int decipherO=0x7f05000d;
         public static final int dialogButton=0x7f050002;
-        public static final int eddittextO=0x7f05000b;
         public static final int edittext1=0x7f050003;
         public static final int edittext2=0x7f05000a;
         public static final int imageView1=0x7f050001;
         public static final int imageView_clear=0x7f050006;
-        public static final int imageView_close=0x7f050010;
+        public static final int imageView_close=0x7f05000b;
         public static final int imageView_copy=0x7f050004;
-        public static final int imageView_info=0x7f050011;
+        public static final int imageView_info=0x7f05000c;
         public static final int imageView_paste=0x7f050005;
         public static final int linear1=0x7f050007;
-        public static final int pasteO=0x7f05000e;
         public static final int scroll1=0x7f050000;
     }
     public static final class layout {
         public static final int custom=0x7f030000;
         public static final int main=0x7f030001;
-        public static final int overlay=0x7f030002;
-        public static final int title=0x7f030003;
+        public static final int title=0x7f030002;
     }
     public static final class style {
         public static final int AppTheme=0x7f040000;

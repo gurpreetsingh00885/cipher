@@ -5,7 +5,7 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="12621765950743"
+    timestamp="20228987752343"
     token="-8199184105945987939"
     verifier="COMPATIBLE" >
 
@@ -27,14 +27,21 @@
         type="RESOURCES" />
 
     <build
-        timestamp="12543732781389"
+        timestamp="20190455029419"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/home/gurpreet/Desktop/Cipher/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="12621765950743"
+        timestamp="20213276625426"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/home/gurpreet/Desktop/Cipher/app/build/intermediates/builds/debug/20213276625426/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="20228987752343"
         verifier="COMPATIBLE" >
         <artifact
             location="/home/gurpreet/Desktop/Cipher/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
