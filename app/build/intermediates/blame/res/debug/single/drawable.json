@@ -1,10 +1,30 @@
 [
     {
+        "merged": "/home/gurpreet/Desktop/Cipher/app/build/intermediates/res/merged/debug/drawable/clear.png",
+        "source": "/home/gurpreet/Desktop/Cipher/app/src/main/res/drawable/clear.png"
+    },
+    {
+        "merged": "/home/gurpreet/Desktop/Cipher/app/build/intermediates/res/merged/debug/drawable/titleborder.xml",
+        "source": "/home/gurpreet/Desktop/Cipher/app/src/main/res/drawable/titleborder.xml"
+    },
+    {
+        "merged": "/home/gurpreet/Desktop/Cipher/app/build/intermediates/res/merged/debug/drawable/copy.png",
+        "source": "/home/gurpreet/Desktop/Cipher/app/src/main/res/drawable/copy.png"
+    },
+    {
+        "merged": "/home/gurpreet/Desktop/Cipher/app/build/intermediates/res/merged/debug/drawable/buttonshape.xml",
+        "source": "/home/gurpreet/Desktop/Cipher/app/src/main/res/drawable/buttonshape.xml"
+    },
+    {
         "merged": "/home/gurpreet/Desktop/Cipher/app/build/intermediates/res/merged/debug/drawable/close.png",
         "source": "/home/gurpreet/Desktop/Cipher/app/src/main/res/drawable/close.png"
     },
     {
         "merged": "/home/gurpreet/Desktop/Cipher/app/build/intermediates/res/merged/debug/drawable/info.png",
         "source": "/home/gurpreet/Desktop/Cipher/app/src/main/res/drawable/info.png"
+    },
+    {
+        "merged": "/home/gurpreet/Desktop/Cipher/app/build/intermediates/res/merged/debug/drawable/customborder.xml",
+        "source": "/home/gurpreet/Desktop/Cipher/app/src/main/res/drawable/customborder.xml"
     }
 ]

@@ -13,18 +13,21 @@ public final class R {
     public static final class drawable {
         public static final int app_icon=0x7f020000;
         public static final int app_icon2=0x7f020001;
-        public static final int close=0x7f020002;
-        public static final int default_image=0x7f020003;
-        public static final int help=0x7f020004;
-        public static final int info=0x7f020005;
-        public static final int overlay=0x7f020006;
+        public static final int buttonshape=0x7f020002;
+        public static final int clear=0x7f020003;
+        public static final int close=0x7f020004;
+        public static final int copy=0x7f020005;
+        public static final int customborder=0x7f020006;
+        public static final int default_image=0x7f020007;
+        public static final int help=0x7f020008;
+        public static final int info=0x7f020009;
+        public static final int overlay=0x7f02000a;
+        public static final int paste=0x7f02000b;
+        public static final int titleborder=0x7f02000c;
     }
     public static final class id {
-        public static final int button2=0x7f050005;
-        public static final int button3=0x7f050006;
-        public static final int button5=0x7f050007;
-        public static final int button6=0x7f050008;
-        public static final int button7=0x7f050009;
+        public static final int button2=0x7f050008;
+        public static final int button3=0x7f050009;
         public static final int cipherO=0x7f05000c;
         public static final int closeO=0x7f05000f;
         public static final int decipherO=0x7f05000d;
@@ -33,9 +36,12 @@ public final class R {
         public static final int edittext1=0x7f050003;
         public static final int edittext2=0x7f05000a;
         public static final int imageView1=0x7f050001;
+        public static final int imageView_clear=0x7f050006;
         public static final int imageView_close=0x7f050010;
+        public static final int imageView_copy=0x7f050004;
         public static final int imageView_info=0x7f050011;
-        public static final int linear1=0x7f050004;
+        public static final int imageView_paste=0x7f050005;
+        public static final int linear1=0x7f050007;
         public static final int pasteO=0x7f05000e;
         public static final int scroll1=0x7f050000;
     }

@@ -1,6 +1,7 @@
 package com.gs.cipher;
 
 import android.app.*;
+import android.media.Image;
 import android.os.*;
 import android.view.*;
 import android.view.View.*;
@@ -14,7 +15,6 @@ import java.text.*;
 
 
 
-
 public class MainActivity extends Activity
 {
 
@@ -24,11 +24,7 @@ public class MainActivity extends Activity
 	private Button button2;
 	private Button button3;
 	private String text = "";
-	private Button button5;
-	private Button button6;
-	private Button button7;
 	private ImageView info;
-	private ImageView close;
     private android.content.ClipboardManager clipboard;
 	private Intent svc;
 	private ScrollView scroll1;
@@ -81,11 +77,7 @@ public class MainActivity extends Activity
 		edittext2 = (EditText) findViewById(R.id.edittext2);
 		button2 = (Button) findViewById(R.id.button2);
 		button3 = (Button) findViewById(R.id.button3);
-        button5 = (Button) findViewById(R.id.button5);
 		info = (ImageView) titleView.findViewById(R.id.imageView_info);
-		close = (ImageView) titleView.findViewById(R.id.imageView_close);
-		button6 = (Button) findViewById(R.id.button6);
-		button7 = (Button) findViewById(R.id.button7);
         svc = new Intent(this, OverlayShowingService.class);
         dialog = new Dialog(this);
 		scroll1 = (ScrollView) dialog.findViewById(R.id.scroll1);
@@ -111,15 +103,6 @@ public class MainActivity extends Activity
 					showMessage("Thanks for using Cipher.");
 					stopService(svc);
 				    finish();
-				}
-			});*/
-
-		/*button4.setOnClickListener(new View.OnClickListener() {
-				@Override
-				public void onClick(View _v)
-				{
-					edittext1.setText("");
-					edittext2.setText("");
 				}
 			});*/
 
@@ -170,20 +153,6 @@ public class MainActivity extends Activity
 				}
 			});
 		*/
-		button6.setOnClickListener(new View.OnClickListener() {
-				@Override
-				public void onClick(View _v)
-				{
-					ClipData.Item item = clipboard.getPrimaryClip().getItemAt(0);
-					if (item.getText() != null)
-					{
-						edittext1.setText(item.getText());
-						showMessage("Successful.");
-					}
-					else showMessage("Clipboard is empty.");
-				}
-			});
-
 	}
 
 
@@ -191,12 +160,30 @@ public class MainActivity extends Activity
 	{
 	}
 
+	public void pasteImput(View v){
+		ClipData.Item item = clipboard.getPrimaryClip().getItemAt(0);
+		if (item.getText() != null)
+		{
+			edittext1.setText(item.getText());
+			showMessage("Successful.");
+		}
+		else showMessage("Clipboard is empty.");
+	}
+
+	public void copyOutput(View v){
+
+	}
 
 	public void close(View v)
 	{
 		showMessage("Thanks for using Cipher.");
 		stopService(svc);
 		finish();
+	}
+
+	public void clearAll(View v){
+		edittext1.setText("");
+		edittext2.setText("");
 	}
 
 	public void info(View v)
