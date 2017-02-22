@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/gurpreet/Desktop/Cipher/app/build/intermediates/res/merged/debug/layout/custom.xml",
+        "source": "/home/gurpreet/Desktop/Cipher/app/src/main/res/layout/custom.xml"
+    },
+    {
+        "merged": "/home/gurpreet/Desktop/Cipher/app/build/intermediates/res/merged/debug/layout/main.xml",
+        "source": "/home/gurpreet/Desktop/Cipher/app/src/main/res/layout/main.xml"
+    },
+    {
+        "merged": "/home/gurpreet/Desktop/Cipher/app/build/intermediates/res/merged/debug/layout/overlay.xml",
+        "source": "/home/gurpreet/Desktop/Cipher/app/src/main/res/layout/overlay.xml"
+    }
+]

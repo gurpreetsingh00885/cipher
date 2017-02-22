@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/home/gurpreet/Desktop/Cipher/app/build/intermediates/res/merged/debug/drawable-xhdpi/default_image.png",
+        "source": "/home/gurpreet/Desktop/Cipher/app/src/main/res/drawable-xhdpi/default_image.png"
+    },
+    {
+        "merged": "/home/gurpreet/Desktop/Cipher/app/build/intermediates/res/merged/debug/drawable-xhdpi/overlay.png",
+        "source": "/home/gurpreet/Desktop/Cipher/app/src/main/res/drawable-xhdpi/overlay.png"
+    },
+    {
+        "merged": "/home/gurpreet/Desktop/Cipher/app/build/intermediates/res/merged/debug/drawable-xhdpi/help.png",
+        "source": "/home/gurpreet/Desktop/Cipher/app/src/main/res/drawable-xhdpi/help.png"
+    },
+    {
+        "merged": "/home/gurpreet/Desktop/Cipher/app/build/intermediates/res/merged/debug/drawable-xhdpi/app_icon.png",
+        "source": "/home/gurpreet/Desktop/Cipher/app/src/main/res/drawable-xhdpi/app_icon.png"
+    },
+    {
+        "merged": "/home/gurpreet/Desktop/Cipher/app/build/intermediates/res/merged/debug/drawable-xhdpi/app_icon2.png",
+        "source": "/home/gurpreet/Desktop/Cipher/app/src/main/res/drawable-xhdpi/app_icon2.png"
+    }
+]

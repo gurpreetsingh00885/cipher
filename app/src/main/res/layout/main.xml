@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<EditText
+		android:id="@+id/edittext1"
+		android:layout_width="match_parent"
+		android:layout_height="100dp"
+		android:layout_marginTop="0dp"
+		android:padding="8dp"
+		android:textSize="12sp"
+		android:textColor="#FFFFFF"
+		android:hint="Input"
+		android:textColorHint="#FFF9FA"
+		style="@style/AppTheme"
+		android:background="#0A69CB"/>
+
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="8dp"
+		android:orientation="horizontal"
+		android:layout_gravity="fill_horizontal"
+		android:background="#0EB7EF">
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="cipher"
+			android:layout_weight="1.0"
+			android:id="@+id/button2"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="clear"
+			android:layout_weight="1.0"
+			android:id="@+id/button4"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="decipher"
+			android:layout_weight="1.0"
+			android:id="@+id/button3"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:background="#EB550F">
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="HELP"
+			android:layout_weight="1.0"
+			android:id="@+id/button5"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="PASTE"
+			android:layout_weight="1.0"
+			android:id="@+id/button6"/>
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="EXIT"
+			android:layout_weight="1.0"
+			android:id="@+id/button7"/>
+
+	</LinearLayout>
+
+	<EditText
+		android:id="@+id/edittext2"
+		android:layout_width="match_parent"
+		android:layout_height="100dp"
+		android:padding="8dp"
+		android:textSize="12sp"
+		android:textColor="#FAFAFA"
+		android:textColorHint="#FFFFFF"
+		android:enabled="true"
+		style="@style/AppTheme"
+		android:background="#0A69CB"
+		android:hint="Output"/>
+
+</LinearLayout>
+

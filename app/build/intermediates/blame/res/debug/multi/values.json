@@ -1,0 +1,49 @@
+[
+    {
+        "outputFile": "/home/gurpreet/Desktop/Cipher/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 3,
+                    "endColumn": 12,
+                    "endOffset": 131
+                },
+                "from": {
+                    "file": "/home/gurpreet/Desktop/Cipher/app/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 54,
+                        "endLine": 4,
+                        "endColumn": 12,
+                        "endOffset": 130
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 136,
+                    "endLine": 11,
+                    "endColumn": 9,
+                    "endOffset": 514
+                },
+                "from": {
+                    "file": "/home/gurpreet/Desktop/Cipher/app/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 135,
+                        "endLine": 12,
+                        "endColumn": 9,
+                        "endOffset": 513
+                    }
+                }
+            }
+        ]
+    }
+]
