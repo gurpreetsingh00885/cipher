@@ -33,6 +33,7 @@ public class MainActivity extends Activity
 	private Dialog dialog;
 	private LayoutInflater factory;
 	private View titleView;
+	private boolean exitNow = false;
     private boolean showingInfo=false;
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -72,7 +73,7 @@ public class MainActivity extends Activity
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
-        if(!hasFocus && !showingInfo && !paused){startService(svc);}
+        if(!hasFocus && !showingInfo && !exitNow && !paused){startService(svc);}
     }
 
     /*protected void onDestroy(Bundle savedInstanceState)
@@ -189,6 +190,7 @@ public class MainActivity extends Activity
 	public void close(View v)
 	{
 		stopService(svc);
+		exitNow = true;
 		finish();
 	}
 

@@ -5,22 +5,22 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="28234135338983"
+    timestamp="408687136326"
     token="-8199184105945987939"
-    verifier="MANIFEST_FILE_CHANGE" >
+    verifier="FIELD_ADDED" >
 
     <task
         name="javac"
-        duration="468" />
+        duration="512" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="13" />
+        duration="188" />
     <task
         name="verifier"
-        duration="0" />
+        duration="23" />
 
     <artifact
         location="/home/gurpreet/Desktop/Cipher/app/build/outputs/apk/app-debug.apk"
