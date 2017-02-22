@@ -40,6 +40,10 @@
         "source": "/home/gurpreet/Desktop/Cipher/app/src/main/res/drawable/button_copy.xml"
     },
     {
+        "merged": "/home/gurpreet/Desktop/Cipher/app/build/intermediates/res/merged/debug/drawable/paste_pressed.png",
+        "source": "/home/gurpreet/Desktop/Cipher/app/src/main/res/drawable/paste_pressed.png"
+    },
+    {
         "merged": "/home/gurpreet/Desktop/Cipher/app/build/intermediates/res/merged/debug/drawable/button_close.xml",
         "source": "/home/gurpreet/Desktop/Cipher/app/src/main/res/drawable/button_close.xml"
     },

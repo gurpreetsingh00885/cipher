@@ -7,40 +7,40 @@
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 55,
-                    "endLine": 3,
+                    "endLine": 4,
                     "endColumn": 12,
-                    "endOffset": 131
+                    "endOffset": 196
                 },
                 "from": {
                     "file": "/home/gurpreet/Desktop/Cipher/app/src/main/res/values/styles.xml",
                     "position": {
-                        "startLine": 3,
+                        "startLine": 1,
                         "startColumn": 4,
-                        "startOffset": 54,
-                        "endLine": 4,
+                        "startOffset": 16,
+                        "endLine": 3,
                         "endColumn": 12,
-                        "endOffset": 130
+                        "endOffset": 157
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 4,
+                    "startLine": 5,
                     "startColumn": 4,
-                    "startOffset": 136,
-                    "endLine": 11,
+                    "startOffset": 201,
+                    "endLine": 12,
                     "endColumn": 9,
-                    "endOffset": 514
+                    "endOffset": 579
                 },
                 "from": {
                     "file": "/home/gurpreet/Desktop/Cipher/app/src/main/res/values/styles.xml",
                     "position": {
-                        "startLine": 5,
+                        "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 135,
-                        "endLine": 12,
+                        "startOffset": 162,
+                        "endLine": 11,
                         "endColumn": 9,
-                        "endOffset": 513
+                        "endOffset": 540
                     }
                 }
             }

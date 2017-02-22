@@ -24,7 +24,7 @@
         android:layout_toLeftOf="@id/imageView_close"
         android:onClick="info"
         android:layout_marginTop="17dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginRight="8dp"
         android:background="@drawable/button_info"/>
 
     <TextView

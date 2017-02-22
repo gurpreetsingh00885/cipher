@@ -13,6 +13,7 @@ public class MainActivity extends Activity
 {
 
 	private EditText edittext1;
+    private boolean paused=false;
 	private LinearLayout linear1;
 	private EditText edittext2;
 	private Button button2;
@@ -24,6 +25,7 @@ public class MainActivity extends Activity
 	private Dialog dialog;
 	private LayoutInflater factory;
 	private View titleView;
+    private boolean showingInfo=false;
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
@@ -51,17 +53,26 @@ public class MainActivity extends Activity
 	{
 		super.onBackPressed();
 		startService(svc);
-		showMessage("Overlay Service Started.");
 
 	}
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
 
-	/*protected void onDestroy(Bundle savedInstanceState)
-	 {
-	 // TODO: Implement this method
-	 showMessage("Resumed");
-	 super.onResume();
-	 }*/
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        if(!hasFocus && !showingInfo && !paused){startService(svc);}
+    }
+
+    /*protected void onDestroy(Bundle savedInstanceState)
+         {
+         // TODO: Implement this method
+         showMessage("Resumed");
+         super.onResume();
+         }*/
 	private void  initialize()
 	{
 		factory =  getLayoutInflater();
@@ -84,7 +95,6 @@ public class MainActivity extends Activity
 					edittext2.setText(text);
 					ClipData clip = ClipData.newPlainText("output", edittext2.getText().toString());
 					clipboard.setPrimaryClip(clip);
-					showMessage("Output Copied to ClipBoard");
 				}
 			});
 
@@ -111,7 +121,6 @@ public class MainActivity extends Activity
 						edittext2.setText(text);
 						ClipData clip = ClipData.newPlainText("output", edittext2.getText().toString());
 						clipboard.setPrimaryClip(clip);
-						showMessage("Output Copied to ClipBoard");
 					}
 					else
 					{
@@ -158,7 +167,6 @@ public class MainActivity extends Activity
 		if (item.getText() != null)
 		{
 			edittext1.setText(item.getText());
-			showMessage("Successful.");
 		}
 		else showMessage("Clipboard is empty.");
 	}
@@ -169,7 +177,6 @@ public class MainActivity extends Activity
 
 	public void close(View v)
 	{
-		showMessage("Thanks for using Cipher.");
 		stopService(svc);
 		finish();
 	}
@@ -181,6 +188,7 @@ public class MainActivity extends Activity
 
 	public void info(View v)
 	{
+        showingInfo =  true;
 		dialog.setContentView(R.layout.custom);
 		dialog.setTitle("Help");
 		dialog.show();
@@ -194,6 +202,7 @@ public class MainActivity extends Activity
 			public void onClick(View v)
 			{
 				dialog.dismiss();
+                showingInfo = false;
 			}
 		});
 	}
@@ -221,7 +230,6 @@ public class MainActivity extends Activity
 		    }
 			catch (RuntimeException e1)
 			{
-				showMessage(String.format("Couldn't recognize '%c'", inputText.charAt(i)));
 				finalText += c;
 			}
 		}
