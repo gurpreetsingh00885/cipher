@@ -1,25 +1,24 @@
 package com.gs.cipher;
 
-import android.app.*;
-import android.media.Image;
-import android.os.*;
-import android.view.*;
-import android.view.View.*;
-import android.widget.*;
-import android.content.*;
-import android.graphics.*;
-import android.net.*;
-import android.text.*;
-import java.util.*;
-import java.text.*;
 
-
+import android.app.Activity;
+import android.app.Dialog;
+import android.content.ClipData;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.Window;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 public class MainActivity extends Activity
 {
 
 	private EditText edittext1;
-	private LinearLayout linear1;
 	private EditText edittext2;
 	private Button button2;
 	private Button button3;
@@ -27,7 +26,6 @@ public class MainActivity extends Activity
 	private ImageView info;
     private android.content.ClipboardManager clipboard;
 	private Intent svc;
-	private ScrollView scroll1;
 	private Dialog dialog;
 	private LayoutInflater factory;
 	private View titleView;
@@ -57,7 +55,6 @@ public class MainActivity extends Activity
 	{
 		super.onBackPressed();
 		startService(svc);
-		showMessage("Overlay Service Started.");
 
 	}
 
@@ -73,14 +70,12 @@ public class MainActivity extends Activity
 		factory =  getLayoutInflater();
 		titleView =  factory.inflate(R.layout.title, null);
 		edittext1 = (EditText) findViewById(R.id.edittext1);
-		linear1 = (LinearLayout) findViewById(R.id.linear1);
 		edittext2 = (EditText) findViewById(R.id.edittext2);
 		button2 = (Button) findViewById(R.id.button2);
 		button3 = (Button) findViewById(R.id.button3);
 		info = (ImageView) titleView.findViewById(R.id.imageView_info);
         svc = new Intent(this, OverlayShowingService.class);
         dialog = new Dialog(this);
-		scroll1 = (ScrollView) dialog.findViewById(R.id.scroll1);
 
 		button2.setOnClickListener(new View.OnClickListener() {
 				@Override
@@ -91,7 +86,6 @@ public class MainActivity extends Activity
 					edittext2.setText(text);
 					ClipData clip = ClipData.newPlainText("output", edittext2.getText().toString());
 					clipboard.setPrimaryClip(clip);
-					showMessage("Output Copied to ClipBoard");
 				}
 			});
 
@@ -118,7 +112,6 @@ public class MainActivity extends Activity
 						edittext2.setText(text);
 						ClipData clip = ClipData.newPlainText("output", edittext2.getText().toString());
 						clipboard.setPrimaryClip(clip);
-						showMessage("Output Copied to ClipBoard");
 					}
 					else
 					{
@@ -165,7 +158,6 @@ public class MainActivity extends Activity
 		if (item.getText() != null)
 		{
 			edittext1.setText(item.getText());
-			showMessage("Successful.");
 		}
 		else showMessage("Clipboard is empty.");
 	}
@@ -176,7 +168,6 @@ public class MainActivity extends Activity
 
 	public void close(View v)
 	{
-		showMessage("Thanks for using Cipher.");
 		stopService(svc);
 		finish();
 	}
@@ -196,7 +187,7 @@ public class MainActivity extends Activity
 
 		Button dialogButton = (Button) dialog.findViewById(R.id.dialogButton);
 		// if button is clicked, close the custom dialog
-		dialogButton.setOnClickListener(new OnClickListener() {
+		dialogButton.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v)
 			{
@@ -228,7 +219,6 @@ public class MainActivity extends Activity
 		    }
 			catch (RuntimeException e1)
 			{
-				showMessage(String.format("Couldn't recognize '%c'", inputText.charAt(i)));
 				finalText += c;
 			}
 		}
@@ -261,7 +251,6 @@ public class MainActivity extends Activity
 			}
 		    catch (RuntimeException e1)
 			{
-				showMessage(String.format("Couldn't recognize '%c'", inputText.charAt(i)));
 			    finalText += c;
 			}
 		}

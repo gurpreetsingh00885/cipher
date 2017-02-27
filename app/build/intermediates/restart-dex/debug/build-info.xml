@@ -5,9 +5,9 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="16948727590212"
+    timestamp="19118572007134"
     token="-8199184105945987939"
-    verifier="COMPATIBLE" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
@@ -23,29 +23,15 @@
         duration="0" />
 
     <artifact
-        location="/home/gurpreet/Desktop/Cipher/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-        type="RESOURCES" />
+        location="/home/gurpreet/Desktop/Cipher/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
 
     <build
-        timestamp="16821180000978"
+        timestamp="19118572007134"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/home/gurpreet/Desktop/Cipher/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="16893860076712"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/gurpreet/Desktop/Cipher/app/build/intermediates/builds/debug/16893860076712/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="16948727590212"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/gurpreet/Desktop/Cipher/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-            type="RESOURCES" />
     </build>
 
 </instant-run>

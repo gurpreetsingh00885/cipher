@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_centerInParent="true"
-    android:background="@drawable/customborder"
+    android:background="@drawable/activity_bg"
     android:padding="2dp">
 
     <LinearLayout
@@ -45,7 +45,7 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:onClick="copyOutput"
-                    android:src="@drawable/copy" />
+                    android:background="@drawable/button_copy" />
                 <ImageView
                     android:id="@+id/imageView_paste"
                     android:layout_width="30dp"
@@ -53,13 +53,13 @@
                     android:onClick="pasteImput"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
-                    android:src="@drawable/paste" />
+                    android:background="@drawable/button_paste" />
                 <ImageView
                     android:id="@+id/imageView_clear"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:onClick="clearAll"
-                    android:src="@drawable/clear" />
+                    android:background="@drawable/button_clear" />
 
             </LinearLayout>
         </LinearLayout>
@@ -69,14 +69,15 @@
             android:layout_height="wrap_content"
             android:layout_gravity="fill_horizontal"
             android:background="#FFFFFF"
-            android:orientation="horizontal"
-            android:padding="8dp">
+            android:orientation="horizontal">
 
             <Button
+                android:layout_margin="7dp"
                 android:id="@+id/button2"
 
-                android:text="CIPHER"
-                android:textColor="#FFFFFF"
+                android:text="Cipher"
+                android:textAllCaps="false"
+                android:textColor="@drawable/text"
                 android:textSize="20sp"
 
                 android:layout_width="wrap_content"
@@ -92,9 +93,10 @@
 
             <Button
                 android:id="@+id/button3"
-
-                android:text="DECIPHER"
-                android:textColor="#FFFFFF"
+                android:layout_margin="7dp"
+                android:text="Decipher"
+                android:textAllCaps="false"
+                android:textColor="@drawable/text"
                 android:textSize="20sp"
 
                 android:layout_width="wrap_content"
