@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/home/gurpreet/Desktop/Cipher/app/build/intermediates/res/merged/debug/drawable/paste.png",
+        "source": "/home/gurpreet/Desktop/Cipher/app/src/main/res/drawable/paste.png"
+    },
+    {
         "merged": "/home/gurpreet/Desktop/Cipher/app/build/intermediates/res/merged/debug/drawable/clear.png",
         "source": "/home/gurpreet/Desktop/Cipher/app/src/main/res/drawable/clear.png"
     },

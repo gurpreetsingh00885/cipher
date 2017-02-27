@@ -52,7 +52,6 @@ public final class R {
         public static final int title=0x7f030003;
     }
     public static final class style {
-        public static final int AppTheme=0x7f040000;
-        public static final int AppTheme2=0x7f040001;
+        public static final int customDialog=0x7f040000;
     }
 }

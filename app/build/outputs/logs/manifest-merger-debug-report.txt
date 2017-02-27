@@ -22,7 +22,7 @@ ADDED from /home/gurpreet/Desktop/Cipher/app/src/main/AndroidManifest.xml:5:5-25
 	android:icon
 		ADDED from /home/gurpreet/Desktop/Cipher/app/src/main/AndroidManifest.xml:7:9-42
 	android:theme
-		ADDED from /home/gurpreet/Desktop/Cipher/app/src/main/AndroidManifest.xml:9:9-63
+		ADDED from /home/gurpreet/Desktop/Cipher/app/src/main/AndroidManifest.xml:9:9-44
 	android:name
 		ADDED from /home/gurpreet/Desktop/Cipher/app/src/main/AndroidManifest.xml:8:9-42
 activity#com.gs.cipher.MainActivity

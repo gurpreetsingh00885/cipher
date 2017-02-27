@@ -1,4 +1,7 @@
-#Wed Feb 22 18:15:14 IST 2017
-base.0=/home/gurpreet/Desktop/Cipher/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+#Mon Feb 27 07:24:01 IST 2017
+base.0=/home/gurpreet/Desktop/Cipher/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_3b7674c40b6dc3e55bba4b6815f3081ec45b4392
+renamed.1=classes2.dex
 renamed.0=classes.dex
-file.0=/home/gurpreet/Desktop/Cipher/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
+file.1=/home/gurpreet/Desktop/Cipher/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_674f850890c8b13bc2b8277af257891052a6c682/classes.dex
+base.1=/home/gurpreet/Desktop/Cipher/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_674f850890c8b13bc2b8277af257891052a6c682
+file.0=/home/gurpreet/Desktop/Cipher/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_3b7674c40b6dc3e55bba4b6815f3081ec45b4392/classes.dex

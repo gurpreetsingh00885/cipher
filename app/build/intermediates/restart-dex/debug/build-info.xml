@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="armeabi-v7a,armeabi"
-    api-level="19"
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="23"
     density="xhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="12621765950743"
+    timestamp="16948727590212"
     token="-8199184105945987939"
     verifier="COMPATIBLE" >
 
@@ -27,14 +27,21 @@
         type="RESOURCES" />
 
     <build
-        timestamp="12543732781389"
+        timestamp="16821180000978"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/home/gurpreet/Desktop/Cipher/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="12621765950743"
+        timestamp="16893860076712"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/home/gurpreet/Desktop/Cipher/app/build/intermediates/builds/debug/16893860076712/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="16948727590212"
         verifier="COMPATIBLE" >
         <artifact
             location="/home/gurpreet/Desktop/Cipher/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
